@@ -7,12 +7,12 @@ Discentes: GABRIEL MARTINS PEREIRA GONÇALVES, MARCOS PAULO DE OLIVEIRA, RENAN D
 XAMPP: https://www.apachefriends.org/pt_br/index.html
 
 Pode ser utilizado tanto o Heidi quanto Workbench, porem Workbench vc pode mexer com a modelagem do banco.
+
 HeidiSQL: https://teamsql.io/?gclid=CjwKCAjwu5veBRBBEiwAFTqDwf7BTBMttKoR_Pj3HYh6rrEVPaBfAOec7CTFOKgzD--uuU43iv9VkBoCf78QAvD_BwE
 
 ou
 
 Workbench: https://dev.mysql.com/downloads/workbench/
-
 
 NetBeans: https://netbeans.org/downloads/
 
