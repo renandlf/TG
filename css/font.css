@@ -1,0 +1,14 @@
+
+/* 
+    Created on : 2 de jul de 2019, 09:58:10
+    Author     : felipe-cg
+*/
+
+@font-face{
+	font-family:"futura";
+	src: url("./font/Futura_Bk_BT_Book.ttf");
+}
+@font-face{
+	font-family:"futura-bold";
+	src: url("./font/Futura_Bold_BT.ttf");
+}

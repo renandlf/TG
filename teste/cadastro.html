@@ -1,0 +1,93 @@
+<br />
+<b>Notice</b>:  Undefined index: cadastrar in <b>D:\www\Comanda_LM\pages\login.php</b> on line <b>27</b><br />
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de Comandas</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' type='text/css' href='../../css/style.css'>
+        <!--JS--><script charset='utf-8' type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' defer='defer'></script>
+    </head>
+    <body>
+        <div id='menu'> 
+            <div id='logo'> 
+                <a href='index.php'><span>Restaurante</span></a>
+            </div><div id='itens-menu'>
+                <a href='index.php'><span id=''><center>Início</center></span></a>
+                <a href='produto.php'><span id=''><center>Produtos</center></span></a>
+                <a href='comanda.php'><span id=''><center>Comanda</center></span></a>
+            </div>
+            <div id='bt-conectar'>
+                <a href='login.php'><span><center>Login</center></span></a>
+            </div>
+        </div>
+        <div id='conteudo'>
+            <form action='' method='POST'>
+                <p><span style='font-size:1.5em;'>Login</span></p>
+                <br>
+                <p><span>Nome:* </span>
+                    <input type='text' name='nome'/></p>
+                <br>
+                <p><span>CPF:* </span>
+                    <input type='text' name='cpf'/></p>
+                <br>
+                <p><span>RG:* </span>
+                    <input type='text' name='rg'/></p>
+                <br>
+                <p><span>Data de nascimento:* </span>
+                    <input type='date' name='datanascimento'/></p>
+                <br>
+                <p><span>Telefone:* </span>
+                    <input type='text' name='telefone'/></p>
+                <br>
+                <!------------------------->
+                <p><span>CEP:* </span><input type = 'text' name = 'cep' id = 'cep' onblur = 'pesquisacep(this.value);'/></p>
+                <p><span>Rua:* </span><input type = 'text' name = 'rua' id = 'rua' /></p>
+                <p><span>Numero:* </span><input type = 'text' name = 'numero' id = 'numero' /></p>
+                <p><span>Bairro:* </span><input type = 'text' name = 'bairro' id = 'bairro'/></p>
+                <p><span>Cidade:* </span><input type = 'text' name = 'cidade' id = 'cidade'/></p>
+                <p><span>Estado:* </span><select name = 'estado' id = 'estado' >
+                        <option value = '' disabled = 'disabled' selected = 'selected'>Selecione</option>
+                        <option value = 'AC'>AC</option>
+                        <option value = 'AL'>AL</option>
+                        <option value = 'AM'>AM</option>
+                        <option value = 'AP'>AP</option>
+                        <option value = 'BA'>BA</option>
+                        <option value = 'CE'>CE</option>
+                        <option value = 'DF'>DF</option>
+                        <option value = 'ES'>ES</option>
+                        <option value = 'GO'>GO</option>
+                        <option value = 'MA'>MA</option>
+                        <option value = 'MG'>MG</option>
+                        <option value = 'MS'>MS</option>
+                        <option value = 'MT'>MT</option>
+                        <option value = 'PA'>PA</option>
+                        <option value = 'PB'>PB</option>
+                        <option value = 'PE'>PE</option>
+                        <option value = 'PI'>PI</option>
+                        <option value = 'PR'>PR</option>
+                        <option value = 'RJ'>RJ</option>
+                        <option value = 'RN'>RN</option>
+                        <option value = 'RS'>RS</option>
+                        <option value = 'RO'>RO</option>
+                        <option value = 'RR'>RR</option>
+                        <option value = 'SC'>SC</option>
+                        <option value = 'SE'>SE</option>
+                        <option value = 'SP'>SP</option>
+                        <option value = 'TO'>TO</option>
+                    </select><p>
+                    <!------------------------->
+                <p><span>Senha:* </span>
+                    <input type='password' name='senha'/></p>
+                <input type='hidden' name='act' value='cons'/>
+                <br><input type='submit' name='cadastrar' value='Cadastrar'/>
+            </form>
+        </div>
+        <footer>
+            <center>
+                <span style='position: relative; top: 0.5em;'>Ourinhos - 2019</span>
+            </center>
+        </footer>
+    </body>
+</html>

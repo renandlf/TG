@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-----------------------------CABEÇALHO----------------------------------------->
+<html>
+    <head>
+        <title>Sistema de Comandas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            @import url(../css/font.css);
+            body{
+                font-family: futura;
+                font-size: 1em;
+                /*border: 1px solid #000;*/
+                margin: 0em;
+                padding: 0em;
+                max-width: 100.01%;
+                width: 99.99%;
+                background-color: #dfdfdf;
+
+            }
+            #menu{
+                position: fixed;
+                top: 0em;
+                width: 100%;
+                height: 3.95em;
+                background-color: #fff;
+                z-index: 1000;
+                border-bottom: 0.5em solid;
+                border-bottom-color: #f53;
+                font-size: 1em;
+            }
+            #logo{
+                position: relative;
+                left:10%;
+                top: 0.4em;
+                font-size: 2em;
+                display: inherit;
+                /*                border-top: .5em solid;
+                                border-right: 0em solid; 
+                                border-bottom: .5em solid; 
+                                border-left: 0em solid;*/
+            }
+            #itens-menu a:link span, #itens-menu a:visited span  {
+                background-color: #fff;
+                border-top: .5em solid #f53;
+                border-bottom: .5em solid #f53;
+                color: #444;
+                transition:all ease 0.3s;
+            }
+            #itens-menu a:hover span {
+                background-color: #ddd;
+                border-top: .5em solid #953;
+                border-bottom: .5em solid #f97;
+                color: #000;
+                transition:all ease 0.3s;
+            }
+            a:link #ativo, a:visited #ativo{
+                background-color: #fff !important;
+                border-bottom:  .5em solid #fff !important;
+                color: #000 !important;
+                transition:all ease 0.3s;
+            }
+            a:hover #ativo{
+                background-color: #f0f0f0 !important;
+                border-top: .5em solid #f64 !important;
+                border-bottom:  .5em solid #f0f0f0 !important;
+                color: #000 !important;
+                transition:all ease 0.3s;
+            }
+            #itens-menu span{
+                position: relative;
+
+                margin-top: -0.2em;
+                margin-left: -0.35em;
+                margin-right: 0em;
+                display: inline-block;
+                border-top: .5em solid #f53;
+                border-right: 0em transparent; 
+                /*border-bottom: .5em solid #000;*/ 
+                border-bottom: .5em solid #f53; 
+                border-left: 0em transparent;
+                min-width: 6em;
+                padding: 0em;
+            }
+            #bt-conectar a:link span, #bt-conectar a:visited span{
+                background-color: #fff;
+                color: #000;
+                transition:all ease 0.3s;
+
+            }
+            #bt-conectar a:hover span{
+                background-color: #f53;
+                color: #fff;
+
+
+            }
+            #bt-conectar a span{
+                position: fixed;
+                top: 1em;
+                right: 2em;
+                margin-top: 0em;
+                margin-left: -0.35em;
+                margin-right: 0em;
+                display: inline-block;
+                border-top: .5em solid #f53;
+                border-right: 0em transparent; 
+                border-bottom: .5em solid #f53; 
+                border-left: 0em transparent;
+                min-width: 6em;
+                padding: 0em;
+                background-color: #fff;
+                transition:all ease 0.3s;
+            }
+
+            footer{
+                position: fixed;
+                bottom: 0em;
+                width: 100%;
+                height: 2em;
+                background-color: #f53;
+                z-index: 2000;
+
+            }
+            #itens-menu {
+                position: relative;
+                left: 50%;
+                margin-left: -10%;
+            }
+            /*           #itens-menu a {
+                            position: relative;
+                            left: 50%;
+                        }*/
+            #logo a:link, #logo a:visited{
+                color: #000;
+            }
+            #logo a:hover{
+                color: #e53;
+            }
+            #conteudo{
+                position: relative;
+                display: block;
+                margin-top:4.45em;
+                /*border: 1px solid #000;*/
+                width: 80%;
+                left: 10%;
+                min-height:35em; 
+                background-color: #fff;
+                padding-bottom: .5em;
+                padding-top: 0.5em;
+                padding-left: 1em;
+            }
+            ::selection{
+                background-color:#d53;
+                color:#fff;
+            }
+
+            ::-moz-selection{
+                background-color:#d53;
+                color:#fff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--------------------------------MENU-------------------------------------------->
+
+        <div id="menu">
+
+
+            <div id="logo">
+                <a href='index.php'> <span>Restaurante</span></a>
+            </div>
+
+            <div id="itens-menu">
+
+                <a href="#"><span id="ativo"><center>Início</center></span></a>
+                <a href="#"><span><center>Produtos</center></span></a>
+                <a href="#"><span><center>Comanda</center></span></a>
+                <a href="#"><span><center>Perfil</center></span></a>
+
+            </div>
+            <div id="bt-conectar">
+                <a href="#"><span><center>Conectar</center></span></a>
+            </div>
+
+        </div>
+        <!----------------------------------CONTEUDO---------------------------------------->
+        <style>
+            .produto{
+                position: relative;
+                border: 2px solid #f53;
+                margin-left: -40%;
+                left:50%;
+                left:50%;
+                min-width: 50%;
+                width: 70%;
+                padding-left: 2em;
+                cursor: pointer;
+                padding-bottom: .7em;
+            }
+            .produto-b{
+                position: relative;
+                left: 10em;
+                margin-top: -3em;
+            }
+            .titulo{
+                font-size: 1.4em;
+            }
+
+            .inicial-comanda{
+
+            }
+            .produto-comanda{
+                position: relative;
+                border: 2px solid #f53;
+                margin-left: -40%;
+                left:51%;
+                min-width: 50%;
+                width: 70%;
+                max-width: 70%;
+                padding-left: 2em;
+                padding-bottom: .7em;
+                margin-bottom: 2em;
+            }
+            #comandas{
+                position: relative;
+                width: 90%;
+                min-height:13em;
+                left: 3%;
+                display: block;
+                border: .5px solid #f53;
+                padding-bottom: 2em;
+            }
+            .comanda{
+                position: relative;
+                width: 14em;
+                /*margin: 4.6%;*/
+                margin-top: 2em;
+                margin-left: 4.6%;
+                margin-right: 4.6%;
+                text-align: center;
+                display: inline-block;
+                border: 2px solid #f53;
+                padding-bottom: 0em;
+            }
+        </style>
+        <div id="conteudo">
+            <form action="teste.php" method="POST">
+                <div class='titulo'>
+                    <p><span>Comandas em Aberto</span></p>
+                    <p><span>Mesa -01</span></p>
+                </div>
+
+                <div id='comandas'>
+                    <label for='comanda01' >
+ 
+                        <div class='comanda'>
+                            <p>Nome: Felipe Correa</p>
+                            <p>CPF: 46188259878</p>
+                            <p>Valor Total: R$ 20,00</p>
+                            <input type='submit' id='comanda01' name='act' value="01" style="display:none;" />
+                            <p><span>X Fechar Conta X</span></p>
+                        </div>
+                    </label>
+                    
+                </div>
+            </form>
+        </div>
+        <!----------------------------------RODAPE--------------------------------------->        
+        <footer><center><span style="position: relative; top: 0.5em;">Ourinhos - 2019</span></center></footer>
+    </body>
+</html>

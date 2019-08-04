@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de Comandas</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' type='text/css' href='../../css/style.css'>
+        <!--JS--><script charset='utf-8' type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' defer='defer'></script>
+    </head>
+    <body>
+        <div id='menu'> 
+            <div id='logo'> 
+                <a href='index.php'><span>Restaurante</span></a>
+            </div><div id='itens-menu'>
+                <a href='index.php'><span id=''><center>Início</center></span></a>
+                <a href='produto.php'><span id=''><center>Produtos</center></span></a>
+                <a href='comanda.php'><span id=''><center>Comanda</center></span></a>
+                <a href='perfil.php'><span id='ativo'><center>Perfil</center></span></a>
+            </div>
+            <div id='bt-conectar'>
+                <a href='logout.php'><span><center>Sair</center></span></a>
+            </div>
+        </div>
+        <div class = 'item-campo'>
+            <div id='conteudo'>
+                <form action='' method='POST'>
+                    <p><span style='font-size:1.5em;'>Login</span></p>
+                    <br>
+                    <p><span>Nome:* </span>
+                        <input type='text' name='nome' value='Felipe Correa'/></p>
+                    <br>
+                    <p><span>CPF:* </span>
+                        <input type='text' name='cpf' value='46188259878'/></p>
+                    <br>
+                    <p><span>RG:* </span>
+                        <input type='text' name='rg' value='507995818'/></p>
+                    <br>
+                    <p><span>Data de nascimento:* </span>
+                        <input type='date' name='datanascimento'  value='2019-07-04'/></p>
+                    <br>
+                    <p><span>Telefone:* </span>
+                        <input type='text' name='telefone' value='14998975807'/></p>
+                    <br>
+                    <!------------------------->
+                    <p><span>CEP:* </span><input type = 'text' name = 'cep' id = 'cep' value='19901080' onblur = 'pesquisacep(this.value);'/></p>
+                    <p><span>Rua:* </span><input type = 'text' name = 'rua' id = 'rua' value='nao sei'/></p>
+                    <p><span>Numero:* </span><input type = 'text' name = 'numero' id = 'numero' value='1563'/></p>
+                    <p><span>Bairro:* </span><input type = 'text' name = 'bairro' id = 'bairro' value='matilde'/></p>
+                    <p><span>Cidade:* </span><input type = 'text' name = 'cidade' id = 'cidade' value='ourinhos'/></p>
+                    <p><span>Estado:* </span><select name = 'estado' id = 'estado'>
+                            <option value = 'AC' selected = 'selected'>AC</option>
+                            <option value = 'AL' selected = ''>AL</option>
+                            <option value = 'AM' selected = ''>AM</option>
+                            <option value = 'AP' selected = ''>AP</option>
+                            <option value = 'BA' selected = ''>BA</option>
+                            <option value = 'CE' selected = ''>CE</option>
+                            <option value = 'DF' selected = ''>DF</option>
+                            <option value = 'ES' selected = ''>ES</option>
+                            <option value = 'GO' selected = ''>GO</option>
+                            <option value = 'MA' selected = ''>MA</option>
+                            <option value = 'MG' selected = ''>MG</option>
+                            <option value = 'MS' selected = ''>MS</option>
+                            <option value = 'MT' selected = ''>MT</option>
+                            <option value = 'PA' selected = ''>PA</option>
+                            <option value = 'PB' selected = ''>PB</option>
+                            <option value = 'PE' selected = ''>PE</option>
+                            <option value = 'PI' selected = ''>PI</option>
+                            <option value = 'PR' selected = ''>PR</option>
+                            <option value = 'RJ' selected = ''>RJ</option>
+                            <option value = 'RN' selected = ''>RN</option>
+                            <option value = 'RS' selected = ''>RS</option>
+                            <option value = 'RO' selected = ''>RO</option>
+                            <option value = 'RR' selected = ''>RR</option>
+                            <option value = 'SC' selected = ''>SC</option>
+                            <option value = 'SE' selected = ''>SE</option>
+                            <option value = 'SP' selected = ''>SP</option>
+                            <option value = 'TO' selected = ''>TO</option>
+                        </select></p>
+                    <!------------------------->
+                    <p><span>E-mail:* </span>
+                        <input type='text' name='email' value='felipefelpgomes@gmail.com'/></p>
+                    <p><span>Senha:* </span>
+                        <input type='password' name='senha'/></p>
+                    <input type='hidden' name='act' value='atu'/>
+                    <br><input type='submit' name='Atualizar' value='atualizar'/>
+                    <input type='submit' name='Excluir Registro' value='deletar'/>
+                </form>
+            </div></div><br><footer>
+            <center>
+                <span style='position: relative; top: 0.5em;'>Ourinhos - 2019</span>
+            </center>
+        </footer>
+    </body>
+</html>
